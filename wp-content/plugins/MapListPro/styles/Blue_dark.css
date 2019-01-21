@@ -1,0 +1,74 @@
+/***************************/
+/* Colours                 */
+/***************************/
+.infoWindowContainer .infoWindow h3{color:#fff !important;}
+
+a.prettylink .fileTitle{color:#fff;}
+
+.infoWindowContainer .infoWindow h3,
+.prettyMapList .corePrettyStyle{
+	/*Gradient background*/
+	background: rgb(71,100,155); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(71,100,155,1) 0%, rgba(4,59,153,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(71,100,155,1)), color-stop(100%,rgba(4,59,153,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(71,100,155,1) 0%,rgba(4,59,153,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(71,100,155,1) 0%,rgba(4,59,153,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(71,100,155,1) 0%,rgba(4,59,153,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(71,100,155,1) 0%,rgba(4,59,153,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47649b', endColorstr='#043b99',GradientType=0 ); /* IE6-9 */
+
+	/*Drop shadow*/
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); 
+	
+	/*Rounded corners*/
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+	
+	/*Text shadow*/
+	text-shadow: 0px 1px 0px #000; 
+	
+	border:solid 1px #043b99;	
+	color:#fff;	
+}
+
+.prettyMapList .corePrettyStyle a{color:#fff;}
+
+.prettyMapList .corePrettyStyle:hover{
+	background-color:#043B99;
+	background-position:0 -10px;
+	background-repeat:repeat-x;
+}
+
+.prettyMapList .corePrettyStyle:hover a,
+.prettyMapList a.corePrettyStyle:hover{color:#ddd;}
+
+.prettyMapList .corePrettyStyle:active{
+	/*Inset drop-shadow*/
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2); 
+
+	background-color:#000;	
+	background-position:0 -10px;
+	background-repeat:repeat-x;
+	border-color:#ccc;     
+}
+
+/*Link colours*/
+.prettyMapList .prettylink a,
+.prettyMapList .prettylink a:visited{color:#fff;}
+
+.prettyMapList .prettylink .mapcategories{color:#e4e4e4;}
+.prettyMapList .prettylink .mapcategories span{color:#f4f4f4;}
+
+
+/*Close bar*/
+.prettyMapList .prettyFileBar .bar{
+	background-color:#fbfbfb;
+	border-top:solid 1px #ccc;
+}
+.prettyMapList .prettyFileBar .bar .cross{opacity:0.4;}
+.prettyMapList .prettyFileBar .bar .cross:hover{background-color:#efefef;}

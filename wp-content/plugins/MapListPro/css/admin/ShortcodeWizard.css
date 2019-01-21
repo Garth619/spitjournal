@@ -1,0 +1,350 @@
+
+.loading{background:#fff url("../../images/loading32.gif") no-repeat 50% 50%;}
+.float_left{float:left;}
+.float_right{float:right;}
+.hidden{display:none !important;}
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+ul,li{list-style-type:none;}
+
+/*Clear list styles*/
+.unstyled,
+.unstyled li{
+    margin:0;
+    padding:0;
+}
+
+
+
+/*Form styles*/
+select{font-size:13px;margin-left:0;}
+
+input[type="text"]{
+    font-size:13px;
+    padding:6px 3px;
+}
+
+body{color:#333;font-size:13px;margin:0;}
+
+h2{
+    background:transparent url("../../images/MapListProMidIcon.png") no-repeat 0 1px;
+    border-bottom: 1px solid #CCC;
+    color: #069;
+    margin-bottom: 10px;
+    padding:0 0 10px 35px;
+}
+
+#SearchFiles{
+    font-size: 12px;
+    margin-right: 3px;
+    padding: 5px;
+}
+#SearchFiles.error{
+    border:solid 1px #BF0303;
+}
+#noneFoundMessage{
+    border:solid 1px #BF0303;
+    border-width:1px 0;
+    padding:5px;
+}
+#ClearSearch{
+    margin-left:5px;
+}
+
+.fieldError{
+    background: rgb(232,37,23); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(232,37,23,1) 0%, rgba(207,4,4,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,37,23,1)), color-stop(100%,rgba(207,4,4,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(232,37,23,1) 0%,rgba(207,4,4,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(232,37,23,1) 0%,rgba(207,4,4,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(232,37,23,1) 0%,rgba(207,4,4,1) 100%); /* IE10+ */
+    background: linear-gradient(top, rgba(232,37,23,1) 0%,rgba(207,4,4,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e82517', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
+    border:solid 1px #BF0303;
+    color:#fff;
+    font-weight:bold;
+    padding:10px;
+    margin-bottom:10px;
+    position:relative;
+}
+
+.fieldError:after{
+    content:"";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #BF0303;
+    position: absolute;
+    bottom:-10px;
+    left:200px;
+}
+
+
+.help-block{color:#777;display:block;font-style:italic;font-size:11px;margin-top:5px;}
+
+.datepicker{padding:5px;width:75px;}
+#ByTag{padding:5px;width:150px;}
+.fieldContainer{border-bottom:dashed 1px #ccc;margin:5px 0;}
+.fieldContainer h3{margin-bottom:7px;}
+.fieldContainer:last-child{border:none;}
+#TypeList{margin:0;}
+#TypeList ul{margin-top:5px;}
+#TypeList ul,
+#TypeList li{list-style-type:none;margin-left:0;padding-left:0;}
+select{padding:5px;}
+.textfield{padding:5px;}
+
+.twoColList{
+    padding:0 0 10px 0;
+}
+
+.twoColList li{
+    float:left;
+    width:49%;
+}
+
+.twoColList li .help-block{margin-right:10px;}
+
+.col50{float:left;width:49%;}
+
+/*Buttons*/
+.btn{
+    display:inline-block;
+    *display:inline;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-decoration: none;
+    zoom:1;
+
+    /*Gradient background*/
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+    background: linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+
+    /*Rounded corners*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    /*Text shadow*/
+    text-shadow: 0px 2px 0px #fff;
+
+    border:solid 1px #ccc;
+    color:#555;
+}
+
+.btn:hover{
+    background-color:#ccc;
+    border-color:#aaa;
+    color:#D54E21;
+}
+
+.btn:active{
+    /*Inset drop-shadow*/
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+
+    background-color:#ededed;
+    background-position:0 -10px;
+    background-repeat:repeat-x;
+    border-color:#aaa;
+}
+
+/*New Wizard interface*/
+#ScrollContainer{
+    height:500px;
+    overflow:hidden;
+    position:relative;
+    width:600px;
+}
+#Scroller{
+    height:500px;
+    position:absolute;
+    width:3000px;
+}
+.scrollPanel{
+    float:left;
+    height:380px;
+    padding:10px;
+    width:580px;
+}
+
+.buttonBox{
+    border-top:dashed 1px #ccc;
+    height:40px;
+    margin-top:10px;
+    padding:10px 5px 5px 5px;
+    position:relative;
+}
+
+.buttonBox .prev{}
+.buttonBox .create,
+
+.buttonBox .next{
+    position:absolute;
+    right:5px;
+}
+
+#insert{
+    text-align:center;
+    background: none repeat-x scroll left top #21759B;
+    border-color: #298CBA;
+    color: #FFFFFF;
+    filter:none;
+    font-weight: bold;
+    line-height: 23px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+/*List Type Choice*/
+#MapTypeChoice a{
+    -webkit-box-shadow:0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow:0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+
+    background-color:#fff;
+    border:solid 1px #ccc;
+    border-radius:5px;
+    display:inline-block;
+    float:left;
+    font-size:28px;
+    height:240px;
+    margin:40px 7px 10px 7px;
+    padding:20px;
+    text-decoration:none;
+    width:230px;
+}
+
+#MapTypeChoice a:active{
+    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+#MapTypeChoice a span{
+    display:block;
+    font-size:12px;
+    margin-top:10px;
+}
+
+#MapTypeChoice .image,
+#MapTypeChoice .image{
+    background: transparent url("../../images/admin/selectcategories.png") no-repeat 0 0;
+    height:150px;
+    margin-top:20px;
+   transition: opacity .10s ease-in-out;
+   -moz-transition: opacity .10s ease-in-out;
+   -webkit-transition: opacity .10s ease-in-out;    
+    opacity:0.4;
+    width:230px;
+}
+
+#MapTypeChoice .pickFiles .image{background-image: url("../../images/admin/selectlocations.png");}
+
+#MapTypeChoice :hover .image{
+   transition: opacity .10s ease-in-out;
+   -moz-transition: opacity .10s ease-in-out;
+   -webkit-transition: opacity .10s ease-in-out;    
+    opacity:1;
+}
+
+#AllLocations,
+#CategoryList
+{
+    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+
+    background-color:#fff;
+    border:solid 1px #ccc;
+    height:313px;
+    overflow:auto;
+    width:576px;
+}
+
+#AllLocations ul,
+#AllLocations li,
+#CategoryList ul,
+#CategoryList li{list-style-type:none;margin:0;padding:0;}
+
+#AllLocations label,
+#CategoryList label{
+    border-bottom:dotted 1px #f4f4f4;
+    display:block;
+    padding:3px 0;
+}
+
+#AllLocations label:hover,
+#CategoryList label:hover{
+    background-color:rgba(0,0,0,0.2);
+    cursor:pointer;
+}
+
+#AllLocations input,
+#CategoryList input{margin-right:7px;}
+
+#ListMapType li{
+    float:left;
+}
+
+#ListMapType li a{
+    background:transparent url("../../images/MapTypes.png") no-repeat 0 0;
+    display:block;
+    height:55px;
+    opacity:0.4;
+    text-indent:-9000px;
+    width:95px;
+}
+
+#ListMapType li a:hover{
+   transition: opacity .10s ease-in-out;
+   -moz-transition: opacity .10s ease-in-out;
+   -webkit-transition: opacity .10s ease-in-out;
+    opacity:0.8;
+}
+
+#ListMapType li a.selected{opacity:1}
+
+#ListMapType li a.above,
+#ListMapType li a.both{background-position: 0 -132px;}
+#ListMapType li a.rightmap{background-position: 0 -7px;}
+#ListMapType li a.leftmap{background-position: 0 -68px;}
+#ListMapType li a.maponly{background-position: 0 -190px;}
+#ListMapType li a.listonly{background-position: 0 -244px;}
+#ListMapType li a.unclustered{background-position: 0 -316px;}
+#ListMapType li a.clustered{background-position: 0 -378px;}
+
+#MapPosition,
+#MarkerClustering{
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+#MapPosition.disabled li a,
+#MarkerClustering.disabled li a{opacity:0.4;}
+
+#MapPosition.disabled,
+#MarkerClustering.disabled{
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+    opacity:0.2;
+}
+
+
+

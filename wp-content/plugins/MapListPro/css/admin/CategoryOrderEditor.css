@@ -1,0 +1,141 @@
+/* 
+    Document   : iconPicker.css
+    Created on : 25-Nov-2012, 20:10:27
+    Author     : jamesb
+    Description:
+        Stylesheet for the Map Locations -> Custom  Icons setcion
+*/
+
+/*Page icon*/
+#icon-edit.icon32-posts-maplist,.icon32{background:transparent url("../../images/MapListProBigIcon.png") no-repeat 50% 50%;}
+
+/*Contains whole list*/
+#IconPicker{position:relative;width:500px;}
+
+#IconPicker:after{    
+    bottom:0;
+    color:#ccc;
+    content:"Show last";
+    display:block;
+    left:-80px;
+    padding-top:20px;
+    position: absolute;  
+    width:60px;   
+}
+
+#IconPicker .currentIcon{
+    background:transparent none no-repeat 50% 50%;
+    display:block;    
+    height:32px;
+    position:absolute;
+    right:5px;
+    top:3px;
+    width:32px;
+}
+
+#IconPicker > li {
+    /*Gradient background*/
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+    background: linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+
+    /*Rounded corners*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+
+    /*Text shadow*/
+    text-shadow: 0px 2px 0px #fff;
+
+    border:solid 1px #ccc;
+    color:#555;
+    padding:10px;
+    position:relative;
+}
+#IconPicker li label{
+    color:#333;
+    display:block;
+    font-size:18px;    
+}
+#IconPicker input{}
+
+.iconChooser{
+    display:none;/*Starts out hidden*/
+}
+
+.iconChooser span{
+    border-top:dashed 1px #ccc;
+    display:block;
+    margin-top:10px;
+    padding:5px 0;
+}
+
+
+.iconChooser .mapCategoryIcons{}
+.iconChooser .mapCategoryIcons li{display:inline-block;}
+
+.iconChooser .mapCategoryIcons li a.mapIcon{   
+    border:solid 1px transparent;
+    -webkit-border-radius: 5px;
+    border-radius:5px; 
+    display:block;
+}
+.iconChooser .mapCategoryIcons li a.mapIcon:hover{
+    background-color:#ccc;
+    border:solid 1px #aaa;    
+}
+
+.iconChooser .mapCategoryIcons li a.mapIcon:active{  
+    background-color:#999;
+    border:solid 1px #777;   
+}
+
+/*Currently chosen item*/
+.iconChooser .mapCategoryIcons li.selected a.mapIcon{
+    background-color:#333;
+    border:solid 1px #333;
+}
+
+.iconChooser .mapCategoryIcons li a.mapIcon img{}
+
+/*Add helper stuff in*/
+.form-table th{
+    width:60px;
+}
+
+.form-table th:before{
+    color:#ccc;
+    content:"Show first";
+    display:block;
+    left:10px;
+    padding-top:10px;
+    position: absolute;  
+    width:60px;    
+}
+
+#AllIconChoices{
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.1); 
+
+    background-color:#fff;
+    border:solid 1px #ccc;
+    height:200px;
+    overflow:auto;
+    padding:10px;
+}
+
+#AllIconChoices h3{
+    border-bottom: solid 1px #eee;
+    clear:both;
+    display:block;
+    float:none;
+    margin:0 0 10px 0;
+    padding-bottom: 5px;
+    width:435px;
+}
+

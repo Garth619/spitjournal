@@ -1,0 +1,48 @@
+/***************************/
+/* Colours                 */
+/***************************/
+.infoWindowContainer .infoWindow h3,
+.prettyMapList .corePrettyStyle{
+  background-color: #f7f7f7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  color: #555;
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  box-shadow:inset 0px 2px 3px #fff;
+  
+}
+
+.prettyMapList .corePrettyStyle a{color:#555;}
+
+.prettyMapList .corePrettyStyle:hover{
+    background-color:#ccc;
+    border-color:#aaa;    
+}
+
+.prettyMapList .corePrettyStyle:hover a,
+.prettyMapList a.corePrettyStyle:hover{color:#D54E21;}
+
+.prettyMapList .corePrettyStyle:active{
+    /*Inset drop-shadow*/
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2); 
+
+    background-color:#ededed;	
+    background-image:none;
+    background-position:0 -10px;
+    background-repeat:repeat-x;
+    border-color:#aaa;        
+}
+
+/*Close bar*/
+.prettyMapList .prettyFileBar .bar{
+	background-color:#fbfbfb;
+	border-top:solid 1px #ccc;
+}
+.prettyMapList .prettyFileBar .bar .cross{opacity:0.4;}
+.prettyMapList .prettyFileBar .bar .cross:hover{background-color:#efefef;}

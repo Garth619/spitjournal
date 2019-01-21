@@ -1,0 +1,82 @@
+/***************************/
+/* Colours                 */
+/***************************/
+.infoWindowContainer .infoWindow h3{color:#fff !important;}
+
+.infoWindowContainer .infoWindow h3,
+.prettyMapList .corePrettyStyle{
+    /*Gradient background*/
+    background: #ff5db1; /* Old browsers */
+    background: -moz-linear-gradient(top, #ff5db1 0%, #ef017c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff5db1), color-stop(100%,#ef017c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ff5db1 0%,#ef017c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ff5db1 0%,#ef017c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ff5db1 0%,#ef017c 100%); /* IE10+ */
+    background: linear-gradient(top, #ff5db1 0%,#ef017c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#ef017c',GradientType=0 ); /* IE6-9 */
+
+    /*Drop shadow*/
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); 
+
+    /*Rounded corners*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+
+    /*Text shadow*/
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.2);
+
+    border:solid 1px #cb1595;	
+    color:#fff;
+}
+
+.prettyMapList .corePrettyStyle a{color:#fff;}
+
+.prettyMapList .corePrettyStyle:hover{
+	/*Gradient background*/
+	background: #ff5db1; /* Old browsers */
+	background: -moz-linear-gradient(top, #ff5db1 0%, #ef017c 33%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff5db1), color-stop(33%,#ef017c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ff5db1 0%,#ef017c 33%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ff5db1 0%,#ef017c 33%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ff5db1 0%,#ef017c 33%); /* IE10+ */
+	background: linear-gradient(top, #ff5db1 0%,#ef017c 33%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#ef017c',GradientType=0 ); /* IE6-9 */
+	
+	border-color:#a21e7b;	
+}
+
+.prettyMapList .corePrettyStyle:hover a,
+.prettyMapList a.corePrettyStyle:hover{color:#fff;}
+
+.prettyMapList .corePrettyStyle:active{
+	/*Inset drop-shadow*/
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2); 
+
+	background-image:none;
+	background-position:0 -10px;
+	background-repeat:repeat-x;
+	background-color:#ef017c;
+	border-color:#a21e7b;
+	
+	color:#fff;      
+}
+
+/*Link colours*/
+.prettyMapList .prettylink a,
+.prettyMapList .prettylink a:visited{color:#fff;}
+
+.prettyMapList .prettylink .mapcategories{color:#e4e4e4;}
+.prettyMapList .prettylink .mapcategories span{color:#f4f4f4;}
+
+/*Close bar*/
+.prettyMapList .prettyFileBar .bar{
+	background-color:#fbfbfb;
+	border-top:solid 1px #ccc;
+}
+.prettyMapList .prettyFileBar .bar .cross{opacity:0.4;}
+.prettyMapList .prettyFileBar .bar .cross:hover{background-color:#efefef;}

@@ -1,0 +1,62 @@
+/***************************/
+/* Colours                 */
+/***************************/
+.prettyMapList .btn{border:solid 1px #ccc !important;}
+
+.infoWindowContainer .infoWindow h3{
+    background-color:#eee;
+}
+
+.infoWindowContainer .infoWindow h3,
+.prettyMapList .corePrettyStyle{
+    border-bottom:solid 1px #f3f3f3;
+    color:#555;
+    
+    -webkit-transition: background 0.2s ease-in;
+    -moz-transition: background 0.2s ease-in;
+    -ms-transition: background 0.2s ease-in;
+    -o-transition: background 0.2s ease-in;
+    transition: background 0.2s ease-in;    
+}
+
+.prettyMapList .corePrettyStyle:hover{
+    background-color:#f3f3f3;
+    border-color:#aaa;
+}
+
+.prettyMapList .corePrettyStyle:hover a,
+.prettyMapList a.corePrettyStyle:hover{color:#222;}
+
+.prettyMapList .corePrettyStyle:active{
+    /*Inset drop-shadow*/
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2); 
+
+    background-color:#ededed;	
+    background-position:0 -10px;
+    background-repeat:repeat-x;
+    border-color:#aaa;        
+}
+
+/*Remove shadow*/
+.prettyMapList .prettyListItems .prettylink {
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;     
+}
+
+/*Link colours*/
+.prettyMapList .prettylink a,
+.prettyMapList .prettylink a:visited{color:#333;}
+
+.prettyMapList .prettylink .mapcategories{color:#ccc;}
+.prettyMapList .prettylink .mapcategories span{color:#bbb;}
+
+/*Close bar*/
+.prettyMapList .prettyFileBar .bar{
+	background-color:#fbfbfb;
+	border-top:solid 1px #ccc;
+}
+.prettyMapList .prettyFileBar .bar .cross{opacity:0.4;}
+.prettyMapList .prettyFileBar .bar .cross:hover{background-color:#efefef;}

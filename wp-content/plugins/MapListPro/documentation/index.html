@@ -1,0 +1,185 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Map List Pro - List Locations Easily</title>
+	
+	<meta name="description" content="The Map List Pro plugin lists all, or a selection of, locations that you have created through the included Location custom post type. It also allows you to embed multiple lists in a page or post – these can be limited by categories, or by picking the locations from a list. Users can sort, filter, and search locations easily, making Map List Pro perfect for store and business location pages.">
+	<meta name="author" content="SmartRedFox & EireTek">
+	<meta name="copyright" content="SmartRedFox & EireTek">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2012-07-06T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	
+	<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#EDF6EE;color:#412E28;}
+		::-moz-selection{background:#2B2302;color:#B3204D;}
+		::selection{background:#2B2302;color:#B3204D;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#B3204D;}
+		hr{border-top:1px solid #DBE3DC;border-bottom:1px solid #F6FFF7;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#261F02;color:#EDF6EE;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #382E03;-moz-text-shadow:1px 1px 0px #382E03;text-shadow:1px 1px 0px #382E03;}
+		#documenter_sidebar ol{border-top:1px solid #0F0C01;}
+		#documenter_sidebar ol a{border-top:1px solid #382E03;border-bottom:1px solid #0F0C01;color:#EDF6EE;}
+		#documenter_sidebar ol a:hover{background:#2B2302;color:#B3204D;border-top:1px solid #2B2302;}
+		#documenter_sidebar ol a.current{background:#2B2302;color:#B3204D;border-top:1px solid #2B2302;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#creating_locations">Creating Locations</a></li>
+			<li><a href="#adding_a_map_list_to_your_page">Adding a map list to your page</a>
+				<ol>
+					<li><a href="#adding_a_map_list_to_your_page_list_locations_by_picking_them">List locations by picking them</a>
+					<li><a href="#adding_a_map_list_to_your_page_list_locations_by_category">List locations by category</a>
+					<li><a href="#adding_a_map_list_to_your_page_show_all_locations">Show all locations</a>
+					<li><a href="#adding_a_map_list_to_your_page_sorting">Sorting</a>
+					<li><a href="#adding_a_map_list_to_your_page_other_options">Other Options</a>
+				</ol>
+			</li>
+			<li><a href="#options_and_settings">Options and Settings</a></li>
+			<li><a href="#further_customisation">Further Customisation</a>
+				<ol>
+					<li><a href="#further_customisation_creating_your_own_style">Creating your own style</a>
+				</ol>
+			</li>
+			<li><a href="#having_problems_get_in_touch">Having problems? Get in touch.</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright SmartRedFox & EireTek 2012<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Map List Pro</h1><h2>List Locations Easily</h2><hr><ul><li>Created: 03/10/2011</li><li>latest Update: 07/06/2012</li><li>By: SmartRedFox & EireTek</li><li><a href=""></a></li><li>Email: <a href="mailto:&#98;&#111;&#116;&#104;&#97;&#109;&#106;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#98;&#111;&#116;&#104;&#97;&#109;&#106;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li></ul><p>The Map List Pro plugin lists all, or a selection of, locations that you have created through the included Location custom post type. It also allows you to embed multiple lists in a page or post – these can be limited by categories, or by picking the locations from a list. Users can sort, filter, and search locations easily, making Map List Pro perfect for store and business location pages.</p></section><section id="installation">
+	<h3>Installation</h3><hr class="notop">
+<p>
+	To install File List Pro:</p>
+<ol>
+	<li>
+		Log in to your Wordpress site admin.</li>
+	<li>
+		Go to Plugins --&gt; Add New.</li>
+	<li>
+		Choose the Upload option (near the top of the page).</li>
+	<li>
+		Click browse and select the zip file for Map List Pro.</li>
+	<li>
+		Once you&#39;ve selected the file click Install Now.</li>
+	<li>
+		Once the plugin is uploaded and installed choose Activate Plugin.</li>
+</ol>
+</section>
+<section id="creating_locations">
+	<h3>Creating Locations</h3><hr class="notop">
+<p>
+	Map Locations for Map List Pro can be created quickly and easily through the Wordpress Admin interface:</p>
+<ol>
+	<li>
+		Click On Map Locations on the main menu.</li>
+	<li>
+		Choose Add New.</li>
+	<li>
+		There are two main ways to specify where your location is:
+		<ol>
+			<li>
+				By Searching - Start typing into the Search by address box and Map List Pro will search for the location using Google Maps. When you see your location in the list click on it and it will prefill the appropriate fields for you.</li>
+			<li>
+				By Latidtude/Longitude - Enter the Latitude and Longitude for the location and click Go to select it on the map.</li>
+		</ol>
+	</li>
+	<li>
+		If you searched for your location most fields will be precompleted for you, if not you will need to fill in The Title, Description, and Address for the location.</li>
+	<li>
+		You can also add Location categories in for this location. This allows you to filter the locations in lists.</li>
+</ol>
+<p>
+	&nbsp;</p>
+</section>
+<section id="adding_a_map_list_to_your_page">
+	<h3>Adding a map list to your page</h3><hr class="notop">
+<p>
+	To add a Map List to your page you just need to click the Map List Pro button in the editor. This will let you pick the options you want to use for the list and add a shortcode to your page or post.</p>
+<p>
+	The first thing you need to decide is if you want to pick locations from a list, or filter the locations by categories. You then need to click on the corresponding tab.</p>
+<h4 id="adding_a_map_list_to_your_page_list_locations_by_picking_them">List locations by picking them</h4>
+<p>
+	This option lets you create a map list with just the locations you want to display. Just check the locations you want to include by ticking them.</p>
+<h4 id="adding_a_map_list_to_your_page_list_locations_by_category">List locations by category</h4>
+<p>
+	This is the best option if you want to list all files from a certain category, and you want the list to update itself as new locations are created. Pick the categories you want to display from the list.</p>
+<h4 id="adding_a_map_list_to_your_page_show_all_locations">Show all locations</h4>
+<p>
+	To show all locations pick the &quot;By Category&quot; tab and leave all categories unticked.</p>
+<h4 id="adding_a_map_list_to_your_page_sorting">Sorting</h4>
+<p>
+	You can choose what direction the map list will be sorted initially - ascending or descending by title.</p>
+<h4 id="adding_a_map_list_to_your_page_other_options">Other Options</h4>
+<p>
+	The rest of the options allow you to customise how the file list looks:</p>
+<ul>
+	<li>
+		<strong>Locations per page</strong> &ndash; this is the number of files that should be shown before paging kicks in.</li>
+	<li>
+		<strong>Hide search, Hide sort, Hide filter</strong> &ndash; these allow you to customise the display of individual lists by hiding pieces of functionality.</li>
+</ul>
+<p>
+	Once you have chosen all of your options click the Insert button and a shortcode will be entered into your content.</p>
+<p>
+	If you prefer you can enter the shortcode manually. Below is a shortcode with all possible attributes specified. When creating your own shortcode you can probably leave most of these out.</p>
+<p>
+	[maplist categories=&quot;6,3&quot; orderdir=&quot;ASC&quot; hidefilter=&quot;true&quot; hidesort=&quot;true&quot; hidesearch=&quot;true&quot; locationsperpage=&quot;5&quot; locationstoshow=&quot;236,207,189&quot;]</p>
+</section>
+<section id="options_and_settings">
+	<h3>Options and Settings</h3><hr class="notop">
+<p>
+	Options for location lists can be set at a site level via the settings page. To access these settings go to Settings -&gt; Map List Pro.<br>
+	<br>
+	The following options can be set:</p>
+<ul>
+	<li>
+		<strong>Style </strong>&ndash; Map List Pro comes with 18 core styles ready to use. Select the style you want to use from the list and look at the preview to make sure it matches your site. When you&rsquo;ve found the style you like, click Save.</li>
+	<li>
+		<strong>Other options</strong> &ndash; These options let you hide or show the additionaly functionality on file lists. These options are site-wide and if set to hide WILL override options set on individual lists.</li>
+</ul>
+</section>
+<section id="further_customisation">
+	<h3>Further Customisation</h3><hr class="notop">
+<h4 id="further_customisation_creating_your_own_style">Creating your own style</h4>
+<p>
+	You can create your own styles for Map List Pro easily &ndash; the plugin has been designed so that future updates will not remove your styles.<br>
+	<br>
+	Just create a /prettymapstyles/ folder in your active theme directory and copy one of the existing css files into it. This will then show in the Map List Pro settings page with (custom) next to it. Make any changes you need to this file &ndash; most of the colours and core styles are at the bottom of the css files to make customisation easier.</p>
+</section>
+<section id="having_problems_get_in_touch">
+	<h3>Having problems? Get in touch.</h3><hr class="notop">
+<p>
+	If you run into any problems during installation, use, or styling please feel free to <a href="http://www.smartredfox.com/file-list-pro-support/">get in touch with me so I can help</a>.</p>
+</section>
+
+	</div>
+</body>
+</html>
